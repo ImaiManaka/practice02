@@ -11,9 +11,9 @@ pipeline {
         stage('Build-IAR') {
             steps {
                 script {
+                }
             }
         }
-
 
         stage('Build-Sim') {
             steps {
@@ -22,13 +22,9 @@ pipeline {
             }
         }
 
-
-
         stage('CheckRomRamSize') {
             steps {
-                // PythonでROM/RAMサイズを抽出
                 script {
-
                 }
             }
         }
@@ -36,17 +32,14 @@ pipeline {
         stage('C++Test@Linux') {
             steps {
                 script {
-
                     }
                 }
             }
         }
 
-        // report.xmlからグラフを生成する！
         stage('StaticAnaReport') {
             steps {
                 script {
-
                 }
             }
         }
@@ -54,7 +47,6 @@ pipeline {
         stage('UnitTestReport') {
             steps {
                 script {
-
                 }
             }
         }
@@ -62,7 +54,6 @@ pipeline {
         stage('SendToTeams') {
             steps {
                 script {
-
                 }
             }
         }
