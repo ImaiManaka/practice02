@@ -32,7 +32,6 @@ pipeline {
         stage('C++Test@Linux') {
             steps {
                 script {
-                    }
                 }
             }
         }
