@@ -4,7 +4,11 @@ pipeline {
         stage('pull') {
             steps {
                 script {
-                    powershell 'git pull'
+                    powershell '''
+                        echo "ここでpull"
+                        git pull origin main
+                        echo "ここでpull完了"
+                    '''
                 }
             }
         }
